@@ -1,0 +1,130 @@
+:root {
+    --global-color: rgb(255, 255, 255);
+}
+
+#container {
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    /* background-color: rgb(83, 83, 83); */
+}
+
+main {
+    padding-top: 30px;
+}
+
+body {
+    background-color: rgb(25, 25, 25);
+}
+
+footer {
+    display: flex;
+    align-items: end;
+    justify-items: left;
+    flex-direction: row;
+}
+
+.taskc {
+    background-color: rgb(142, 142, 142);
+    height: 95vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    width: 27vw;
+    padding: 10px;
+}
+
+.tasks {
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(219, 219, 219);
+}
+
+.task {
+    color: rgb(72, 71, 71);
+    -webkit-text-stroke-color: rgb(25, 25, 25);
+    -webkit-text-stroke-width: 1px;
+    display: flex;
+    height: auto;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    margin: 10px;
+    cursor: grab;
+}
+
+.del, .switch {
+    width: 55px;
+    height: 50px;
+    margin: 2px;
+    padding: none;
+}
+
+.del {
+    padding: none;
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(208, 208, 208);
+    border-radius: 10px;
+    height: auto;
+    width: calc(auto + 20px);
+    padding: 10px;
+    align-items: center;
+
+}
+
+button:hover {
+    background-color: rgb(164, 164, 164);
+}
+
+#currentTask .task {
+    background-color: rgb(255, 255, 59);
+    border-radius: 5px;
+    margin: 10px;
+    color: rgb(72, 71, 71);
+    -webkit-text-stroke-color: rgb(25, 25, 25);
+    -webkit-text-stroke-width: 1px;
+    display: flex;
+    height: auto;
+    width: 90%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#completedTask .task {
+    background-color: rgb(3, 201, 3);
+    color: white;
+    size: 20px;
+    -webkit-text-stroke-color: rgb(230, 230, 230);
+}
+
+#completedTask .task button {
+    color: rgb(25, 25, 25);
+    -webkit-text-stroke-color: rgb(35, 35, 35);
+}
+
+input {
+    width: auto;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+}
+
+.task:hover {
+    background-color: rgb(199, 199, 199);
+}
